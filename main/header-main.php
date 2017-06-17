@@ -35,23 +35,9 @@
   
 </ul>
 </li>
-<li id="menu-item-99991188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991188"><a href="#">Pages</a>
-<ul class="sub-menu">
-  <li id="menu-item-99991221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991221"><a href="blog/index.html">Blog</a></li>
-  <li id="menu-item-99991211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-99991211"><a href="shop/index.html">Shop</a>
-  <ul class="sub-menu">
-    <li id="menu-item-99991210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991210"><a href="cart-2/index.html">Cart</a></li>
-    <li id="menu-item-99991209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991209"><a href="checkout-2/index.html">Checkout</a></li>
-  </ul>
-</li>
-  <li id="menu-item-99991218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991218"><a href="testimonials/index.html">Testimonials</a></li>
-  <li id="menu-item-99991214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991214"><a href="frequently-asked-questions/index.html">FAQ</a></li>
-  <li id="menu-item-99991216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991216"><a href="privacy-policy/index.html">Privacy Policy</a></li>
-  <li id="menu-item-99991217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991217"><a href="terms-and-conditions/index.html">Terms and Conditions</a></li>
-</ul>
-</li>
-<li id="menu-item-99991219" class="popup menu-item menu-item-type-post_type menu-item-object-page menu-item-99991219"><a href="signup/index.html" class="popup-trigger-ajax">Sign Up</a></li>
-<li id="menu-item-99991419" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-99991419"><a href="my-account/index.html" class="popup-trigger-ajax">Login</a></li>
+
+<li id="menu-item-99991219" class="popup menu-item menu-item-type-post_type menu-item-object-page menu-item-99991219"><a href="signup.php">Sign Up</a></li>
+<li id="menu-item-99991419" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-99991419"><a href="my-account.php">Login</a></li>
 </ul></div>       </nav>
 
         <a href="#site-navigation" class="js-primary-menu-toggle primary-menu-toggle primary-menu-toggle--open"><span class="screen-reader-text">Menu</span></a>
