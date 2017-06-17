@@ -1,0 +1,9 @@
+.job-manager-message {
+	@extend .jobify-alert;
+	@extend .jobify-alert--success;
+}
+
+// ghetto
+.site-main > .job-manager-message {
+	margin: 2em;
+}
