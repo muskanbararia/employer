@@ -30,10 +30,9 @@
 </li>
 <li id="menu-item-99991386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991386"><a href="#">Employers</a>
 <ul class="sub-menu">
-  <li id="menu-item-99991391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991391"><a href="post-a-job/index.html">Post A Job</a></li>
-  <li id="menu-item-99991387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991387"><a href="find-a-candidate/index.html">Find A Candidate</a></li>
-  <li id="menu-item-99991388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991388"><a href="pricing/index.html">Pricing</a></li>
-  <li id="menu-item-99991389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991389"><a href="job-dashboard/index.html">Job Dashboard</a></li>
+  <li id="menu-item-99991391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991391"><a href="post-a-job.php">Post A Job</a></li>
+  <li id="menu-item-99991387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991387"><a href="find-a-candidate.php">Find A Candidate</a></li>
+  
 </ul>
 </li>
 <li id="menu-item-99991188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991188"><a href="#">Pages</a>
