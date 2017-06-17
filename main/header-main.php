@@ -1,6 +1,6 @@
 <header id="masthead" class="site-header" role="banner">
       <div class="container">
-        <a href="index.html" title="Extended" rel="home" class="site-branding">
+        <a href="index.php" title="Extended" rel="home" class="site-branding">
                     <h1 class="site-title">
                           <img src="https://jobify-demos.astoundify.com/premium/wp-content/uploads/sites/3/2016/04/premium-logo.svg" width="" height="" alt="" />
             
@@ -18,14 +18,14 @@
   <input type="text" value="" name="s" id="s" class="searchform__input searchform--header__input" placeholder="Keywords..." />
   <button type="submit" id="searchsubmit" class="searchform__submit searchform--header__submit"><span class="screen-reader-text">Search</button>
 </form>
-<div class="nav-menu nav-menu--primary"><ul id="menu-main-menu" class="nav-menu nav-menu--primary"><li id="menu-item-99991397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991397"><a href="how-it-works/index.html">How It Works</a></li>
-<li id="menu-item-99991393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991393"><a href="pricing/index.html">Pricing</a></li>
+<div class="nav-menu nav-menu--primary"><ul id="menu-main-menu" class="nav-menu nav-menu--primary"><li id="menu-item-99991397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991397"><a href="how-it-works.php">How It Works</a></li>
+<li id="menu-item-99991393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991393"><a href="faq.php">FAQ</a></li>
 <li id="menu-item-99991382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991382"><a href="#">Candidates</a>
 <ul class="sub-menu">
-  <li id="menu-item-99991392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991392"><a href="find-a-job/index.html">Find A Job</a></li>
-  <li id="menu-item-99991212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991212"><a href="companies/index.html">Companies</a></li>
-  <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="submit-your-resume/index.html">Submit Your Resume</a></li>
-  <li id="menu-item-99991383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991383"><a href="candidate-dashboard/index.html">Candidate Dashboard</a></li>
+  <li id="menu-item-99991392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991392"><a href="find-a-job.php">Find A Job</a></li>
+  <li id="menu-item-99991212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991212"><a href="companies.php">Companies</a></li>
+  <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="submit-your-resume.php">Submit Your Resume</a></li>
+  
 </ul>
 </li>
 <li id="menu-item-99991386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991386"><a href="#">Employers</a>
