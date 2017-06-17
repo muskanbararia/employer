@@ -1,0 +1,77 @@
+
+/*
+Theme Name: Jobify - Child Premium
+Theme URI: https://astoundify.com/
+Author: Astoundify
+Author URI: http://astoundify.com
+Description: A beautiful job board site completely integrated with Mike Jolley's WP Job Manager plugin. Use 10+ custom widgets including an interactive map, multiple sliders, testimonials, and more to create a unique homepage in seconds.
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, one-column, right-sidebar, fixed-width, custom-background, custom-header, theme-options, full-width-template, featured-images, flexible-header, custom-menu, translation-ready
+Template: jobify
+*/
+
+@media screen and (min-width: 1500px) {
+    .hero-search__title {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .home .callout-feature-content {
+    padding-top: 13em;
+    padding-bottom: 13em;
+    }
+}
+
+.feature-callout .button--type-action { 
+    background-color: #1e83f0; 
+    border-color: #1e83f0; 
+    color: white;
+}
+
+.job-spotlight {
+    text-align: left;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 3em;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.resume-spotlight {
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 3em;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.price-option__description {
+    border: 0;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+#jobify_widget_testimonials-2 {
+    background-color: #ffffff; 
+    background-image: url();
+}
+
+.home .site-footer { margin-top: 0; }
+
+.home .footer-cta { display: none; }
+
+#jobify_widget_testimonials-2 {
+    background-color: #ffffff;
+}
+
+.woothemes-testimonial--individual p {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+    }
+}
