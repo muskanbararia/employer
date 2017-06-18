@@ -22,7 +22,7 @@
 	
 	<h2>Register</h2>
 
-	<form method="post" class="register">
+	<form action="signup.php" method="post" class="register">
 
 				<p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
 			<label for="reg_sr_firstname">First Name</label>
@@ -38,6 +38,10 @@
 		<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
 			<label for="reg_email">Email address <span class="required">*</span></label>
 			<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" value="" />
+		</p>
+		<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+			<label for="reg_email">Mobile <span class="required">*</span></label>
+			<input type="number" class="woocommerce-Input woocommerce-Input--text input-text" name="mobile" id="reg_email" value="" />
 		</p>
 
 		
@@ -56,11 +60,45 @@
         </p>
     		
 		<p class="woocomerce-FormRow form-row">
-			<input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="bbafb732fd" /><input type="hidden" name="_wp_http_referer" value="/extended/signup/" />			<input type="submit" class="woocommerce-Button button" name="register" value="Register" />
+						<input type="submit" class="woocommerce-Button button" name="register" value="Register" />
 		</p>
 
 		
 	</form>
+	<?php
+                    
+                           
+                    include("database/dbcon.php");  
+
+                    if(isset($_POST['register']) ) 
+                    {  
+                        $fname=$_POST['sr_firstname'];
+                        $lname=$_POST['sr_lastname'];
+                        $email=$_POST['email'];
+                        $phone=$_POST['mobile'];
+                        $pwd=$_POST['password'];
+                        $reg_role=$_POST['reg_role'];
+                        
+
+                        $check_if_package="select * from user WHERE email='$email'";
+                        $run_query=$dbcon->query($check_if_package);  
+
+                        if($run_query->num_rows>0)  
+                        {  
+                           echo "<script>alert('User Already exists')</script>";  
+                        }
+
+                        else{
+                        $insert_package="insert into user (fname, lname, email, mobile,pass,type) VALUE ('$fname','$lname','$email','$phone','$pwd','$reg_role')";  
+
+
+                        if($dbcon->query($insert_package))  
+                        {  
+                            echo "<script>alert('Registered successfully')</script>";
+                        }  
+                        }   
+                    }
+                ?>  
 
 </div>
 

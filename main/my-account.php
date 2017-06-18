@@ -23,7 +23,7 @@
 
 		<h2>Login</h2>
 
-		<form class="woocomerce-form woocommerce-form-login login" method="post">
+		<form class="woocomerce-form woocommerce-form-login login" action="my-account.php" method="post">
 
 			
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -37,7 +37,7 @@
 
 			
 			<p class="form-row">
-				<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="7adf00cff6" /><input type="hidden" name="_wp_http_referer" value="/extended/my-account/" />				<input type="submit" class="woocommerce-Button button" name="login" value="Login" />
+							<input type="submit" class="woocommerce-Button button" name="login" value="Login" />
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
 				</label>
@@ -48,15 +48,41 @@
 
 			
 
-	<div class="wc-social-login form-row-wide">
-
-		<p>For fast login use your social account.</p>
-
-		<a href="../indexf894.html?wc-api=auth&amp;start=facebook&amp;return=https%3A%2F%2Fjobify-demos.astoundify.com%2Fextended%2Fmy-account%2F" class="button-social-login button-social-login-facebook"><span class="si si-facebook"></span>Log in with Facebook</a> <a href="../index4644.html?wc-api=auth&amp;start=twitter&amp;return=https%3A%2F%2Fjobify-demos.astoundify.com%2Fextended%2Fmy-account%2F" class="button-social-login button-social-login-twitter"><span class="si si-twitter"></span>Log in with Twitter</a> 
-	</div>
+	
 
 
 		</form>
+		<?php
+                    
+                           
+                    include("database/dbcon.php");  
+
+                    if(isset($_POST['login']) ) 
+                    {  
+                        
+                        $email=$_POST['username'];
+                        
+                        $pwd=$_POST['password'];
+                        
+
+                        $check_user="select count(*) AS pr from user WHERE email='$email' AND pass='$pwd'";
+
+
+                            $run= $dbcon->query($check_user) or die($dbcon->error);;  
+                            $data = $run->fetch_assoc();
+
+                            if((int)$data['pr'])  
+                            {  
+                                $_SESSION['user']=$email;
+                                echo "<script>window.open('./index.php','_self')</script> ";
+                                
+                            }  
+                            else  
+                            {  
+                                echo "<script>alert('Enter correct password')</script>";      
+                            }   
+                    }
+?>           
 
 
 </div></div>
