@@ -39,6 +39,7 @@
 <li id="menu-item-99991386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991386"><a href="#">Employers</a>
 <ul class="sub-menu">
   <li id="menu-item-99991391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991391"><a href="post-a-job.php">Post A Job</a></li>
+  <li id="menu-item-99991391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991391"><a href="emp-index.php">Posted Jobs</a></li>
   
   
 </ul>

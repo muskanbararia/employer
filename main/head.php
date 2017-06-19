@@ -61,7 +61,7 @@ html{background-color:##ffffff;}body,input,textarea,select,body .chosen-containe
 <link rel='stylesheet' id='jobify-child-css'  href='css/style66f2.css?ver=4.7.5' type='text/css' media='all' />
 <link rel='stylesheet' id='sharedaddy-css'  href='css/sharing5219.css?ver=3.9.6' type='text/css' media='all' />
 <link rel='stylesheet' id='genericons-css'  href='css/genericons128b.css?ver=3.1' type='text/css' media='all' />
-<script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3&amp;libraries=geometry%2Cplaces&amp;language=en&amp;key=AIzaSyBnpq54szZslXDqXOIAr8OEM3PmNZgaL4o&amp;ver=4.7.5'></script>
 <script type='text/javascript' src='js/wc-social-login.min4c56.js?ver=2.0.2'></script>

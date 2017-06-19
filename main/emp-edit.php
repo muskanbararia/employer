@@ -1,5 +1,8 @@
 <?php include "head.php" ?>
+<?php
+$id=$_SESSION['id'];
 
+?>
 <body class="page-template page-template-page-templates page-template-single-column page-template-page-templatessingle-column-php page page-id-99991378 single-listing-style-top single-resume-style-top wp-job-manager-categories-enabled wp-resume-manager-categories-enabled wp-job-manager wp-job-manager-resumes wp-job-manager-wc-paid-listings wp-job-manager-bookmarks wp-job-manager-tags ninjaforms-contact-resume-form wp-job-manager-contact-listing ninjaforms-contact-job-form woocommerce testimonials jetpack custom-font fixed-header jobify-child-premium">
 
 	<div id="page" class="hfeed site">
@@ -19,7 +22,7 @@
                                     
 <article id="post-99991378" class="post-99991378 page type-page status-publish hentry">
     <div class="entry-content">
-        <form action="postJob.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
+        <form action="editJob.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
 	<!--<fieldset>
 		<label>Have an account?</label>
 		<div class="field account-sign-in">
@@ -78,8 +81,13 @@
 				<label for="resume_category">Job category</label>
 				<div class="field">
 					<select name='category' id='category' class='job-manager-category-dropdown ' multiple='multiple' data-placeholder='Choose a category&hellip;' data-no_results_text='No results match' data-multiple_text='Select Some Options'>
-          	<option class="level-0" value="iti">ITI</option>
-          	<option class="level-0" value="diploma">Diploma</option>
+          	<option class="level-0" value="49">Designer</option>
+          	<option class="level-0" value="51">Management &amp; Finance</option>
+          	<option class="level-0" value="52">Marketing</option>
+          	<option class="level-0" value="79">Quality Assurance</option>
+          	<option class="level-0" value="77">Software Development</option>
+          	<option class="level-0" value="50">Web Design/Development</option>
+          </select>
 				</div>
 			</fieldset>
 					<fieldset class="fieldset-resume_content">
