@@ -63,23 +63,45 @@
                         $email=$_POST['username'];
                         
                         $pwd=$_POST['password'];
-                        
+                        $type='employer';
 
-                        $check_user="select count(*) AS pr from user WHERE email='$email' AND pass='$pwd'";
+                        $check_user="select count(*) AS pr from user WHERE email='$email' AND pass='$pwd' AND type='$type'";
 
 
-                            $run= $dbcon->query($check_user) or die($dbcon->error);;  
+                            $run= $dbcon->query($check_user) or die($dbcon->error);  
                             $data = $run->fetch_assoc();
 
                             if((int)$data['pr'])  
                             {  
-                                $_SESSION['user']=$email;
+                                $_SESSION['employer']=$email;
+                                echo "<script>alert('Employer')</script>";
                                 echo "<script>window.open('./index.php','_self')</script> ";
                                 
-                            }  
+                            }
+
                             else  
+                            { $email=$_POST['username'];
+                        
+                        $pwd=$_POST['password'];
+                        $type='candidate';
+
+                        $check_user="select count(*) AS pr from user WHERE email='$email' AND pass='$pwd' AND type='$type'";
+
+
+                            $run= $dbcon->query($check_user) or die($dbcon->error);  
+                            $data = $run->fetch_assoc();
+
+                            if((int)$data['pr'])  
                             {  
-                                echo "<script>alert('Enter correct password')</script>";      
+                                $_SESSION['candidate']=$email;
+                                echo "<script>alert('Candidate')</script>";
+                                echo "<script>window.open('./index.php','_self')</script> ";
+                                
+                            }
+                            else{
+
+                                echo "<script>alert('Enter correct password')</script>";  
+                                }    
                             }   
                     }
 ?>           
