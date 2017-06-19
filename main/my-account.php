@@ -52,12 +52,12 @@
 
 
 		</form>
-		
+
 		<?php
                     
                            
                     include("database/dbcon.php");  
-                    
+
                     if(isset($_POST['login']) ) 
                     {  
                         
@@ -75,7 +75,7 @@
                             if((int)$data['pr'])  
                             {  
                                 $_SESSION['employer']=$email;
-                                echo "<script>alert('Employer')</script>";
+                                
                                 echo "<script>window.open('./index.php','_self')</script> ";
                                 
                             }
@@ -95,7 +95,7 @@
                             if((int)$data['pr'])  
                             {  
                                 $_SESSION['candidate']=$email;
-                                echo "<script>alert('Candidate')</script>";
+                                
                                 echo "<script>window.open('./index.php','_self')</script> ";
                                 
                             }

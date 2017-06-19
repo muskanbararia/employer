@@ -1,9 +1,9 @@
 <?php
   require "database/dbcon.php";
-
+  session_start();
   if(isset($_POST['submitJob'])){
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    $email = $_SESSION['employer'];
     $region = $_POST['region'];
     $title = $_POST['title'];
     $location = $_POST['location'];

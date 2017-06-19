@@ -1,5 +1,8 @@
 <?php include "head.php" ?>
+<?php
+$id=$_SESSION['id'];
 
+?>
 <body class="page-template page-template-page-templates page-template-single-column page-template-page-templatessingle-column-php page page-id-99991378 single-listing-style-top single-resume-style-top wp-job-manager-categories-enabled wp-resume-manager-categories-enabled wp-job-manager wp-job-manager-resumes wp-job-manager-wc-paid-listings wp-job-manager-bookmarks wp-job-manager-tags ninjaforms-contact-resume-form wp-job-manager-contact-listing ninjaforms-contact-job-form woocommerce testimonials jetpack custom-font fixed-header jobify-child-premium">
 
 	<div id="page" class="hfeed site">
@@ -19,7 +22,7 @@
                                     
 <article id="post-99991378" class="post-99991378 page type-page status-publish hentry">
     <div class="entry-content">
-        <form action="postJob.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
+        <form action="editJob.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
 	<!--<fieldset>
 		<label>Have an account?</label>
 		<div class="field account-sign-in">
