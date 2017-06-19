@@ -15,7 +15,7 @@
   <meta name="viewport" content="initial-scale=1">
   <meta name="viewport" content="width=device-width" />
 
-  <title>Extended &#8211; Jobify Extended</title>
+  <title>Quick Jobs</title>
 <link rel='dns-prefetch' href='http://maps.googleapis.com/' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
