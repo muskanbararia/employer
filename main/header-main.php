@@ -2,7 +2,7 @@
       <div class="container">
         <a href="index.php" title="Extended" rel="home" class="site-branding">
                     <h1 class="site-title">
-                          <img src="img/logo.jpg" width="" height="" alt="" />
+                          <img src="img/logo.png" width="" height="" alt="" />
             
             <span>Extended</span>
           </h1>
