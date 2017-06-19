@@ -2,7 +2,7 @@
       <div class="container">
         <a href="index.php" title="Extended" rel="home" class="site-branding">
                     <h1 class="site-title">
-                          <img src="https://jobify-demos.astoundify.com/premium/wp-content/uploads/sites/3/2016/04/premium-logo.svg" width="" height="" alt="" />
+                          <img src="img/logo.jpg" width="" height="" alt="" />
             
             <span>Extended</span>
           </h1>
