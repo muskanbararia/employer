@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php  session_start();  ?>
 <html lang="en-US">
 
 <!-- Mirrored from jobify-demos.astoundify.com/extended/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 00:22:07 GMT -->

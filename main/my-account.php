@@ -52,11 +52,12 @@
 
 
 		</form>
+		
 		<?php
                     
                            
                     include("database/dbcon.php");  
-
+                    
                     if(isset($_POST['login']) ) 
                     {  
                         
