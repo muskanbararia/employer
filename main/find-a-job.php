@@ -4,7 +4,8 @@
 
 	<div id="page" class="hfeed site">
 
-		<?php include "header-main.php" ?><!-- #masthead -->
+		<?php include "header-main.php" ?>
+    <!-- #masthead -->
 
 		<div id="main" class="site-main">
 
@@ -18,59 +19,73 @@
 
 	</div>
 
-        <div class="container content-area">
-                                        
-            
-                <div class="entry-content">
-                    <div class="job_listings" data-location="" data-keywords="" data-show_filters="true" data-show_pagination="false" data-per_page="15" data-orderby="featured" data-order="DESC" data-categories="" >
+  <div class="container content-area">
+    <div class="entry-content">
+      <div class="job_listings" data-location="" data-keywords="" data-show_filters="true" data-show_pagination="false" data-per_page="15" data-orderby="featured" data-order="DESC" data-categories="" >
 
-<form class="job_filters">
+<form class="job_filters" >
 	
 	<div class="search_jobs">
-		
-		<div class="search_keywords">
-			<label for="search_keywords">Keywords</label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="Keywords" value="" />
-		</div>
-
-		<div class="search_location">
-			<label for="search_location">Location</label>
-			<input type="text" name="search_location" id="search_location" placeholder="Location" value="" />
-		</div>
-
-					<div class="search_categories">
-				<label for="search_categories">Category</label>
-									<select name='search_categories[]' id='search_categories' class='job-manager-category-dropdown '  data-placeholder='Choose a category&hellip;' data-no_results_text='No results match' data-multiple_text='Select Some Options'>
-<option value="">Any category</option>	<option class="level-0" value="17">Design</option>
-	<option class="level-0" value="18">Developement</option>
-	<option class="level-0" value="35">Marketing</option>
-</select>
-							</div>
-		
-		        <div class="search_submit">
-            <input type="submit" name="submit" value="Search" />
+    <div class="search_categories" style="width: 50%;">
+      <label for="search_categories">Category</label>
+        <select name='search_categories[]' id='search_categories' class='job-manager-category-dropdown '  data-placeholder='Choose a category&hellip;' data-no_results_text='No results match' data-multiple_text='Select Some Options'>
+          <option value="">Any category</option>
+          <option class="level-0" value="iti">ITI</option>
+          <option class="level-0" value="diploma">Diploma</option>
+        </select>
+    </div>
+		<div class="search_submit" style="float: right;">
+      <input type="submit" name="submit" value="Search" />
         </div>
-    <div class="filter_wide filter_by_tag">Filter by tag: <span class="filter_by_tag_cloud"></span></div><input type="hidden" name="search_region" class="search_region" value="" />	</div>
-
-		<ul class="job_types">
-					<li><label for="job_type_freelance" class="freelance"><input type="checkbox" name="filter_job_type[]" value="freelance"  checked='checked' id="job_type_freelance" /> Freelance</label></li>
-					<li><label for="job_type_full-time" class="full-time"><input type="checkbox" name="filter_job_type[]" value="full-time"  checked='checked' id="job_type_full-time" /> Full Time</label></li>
-					<li><label for="job_type_internship" class="internship"><input type="checkbox" name="filter_job_type[]" value="internship"  checked='checked' id="job_type_internship" /> Internship</label></li>
-					<li><label for="job_type_part-time" class="part-time"><input type="checkbox" name="filter_job_type[]" value="part-time"  checked='checked' id="job_type_part-time" /> Part Time</label></li>
-					<li><label for="job_type_temporary" class="temporary"><input type="checkbox" name="filter_job_type[]" value="temporary"  checked='checked' id="job_type_temporary" /> Temporary</label></li>
-			</ul>
-	<input type="hidden" name="filter_job_type[]" value="" />
+    <div class="filter_wide filter_by_tag"><span class="filter_by_tag_cloud"></span></div><input type="hidden" name="search_region" class="search_region" value="" />	</div>
 <div class="showing_jobs"></div></form>
+  
+<noscript>Your browser does not support JavaScript, or it is disabled. JavaScript must be enabled in order to view listings.</noscript>
+<ul class="job_listings">
+<?php 
+  require "database/dbcon.php";
+  $getJob = "SELECT * FROM job";
+  $job = $dbcon->query($getJob);
+  while($row = $job->fetch_array()){
+    $id = $row[0];
+  ?>
+  <li id="job_listing-3340" class="job_listing job-type-full-time job_position_featured post-3340 type-job_listing status-publish has-post-thumbnail hentry job_listing_region-new-york job_listing_category-design job_listing_type-full-time" style="visibility: visible;">
+    <a href="job-details.php?tag=<?=$id?>" class="job_listing-clickbox"></a>
 
+    <div class="job_listing-logo">
+      <img class="company_logo" src="https://jobify-demos.astoundify.com/extended/wp-content/uploads/sites/3/2014/03/company-logo-airbnb.png" alt="AirBnB"> </div><div class="job_listing-about">
 
-<noscript>Your browser does not support JavaScript, or it is disabled. JavaScript must be enabled in order to view listings.</noscript><ul class="job_listings"></ul><a class="load_more_jobs" href="#" style="display:none;"><strong>Load more listings</strong></a></div>
+      <div class="job_listing-position job_listing__column">
+        <h3 class="job_listing-title"><?=$row[4]?></h3>
+        <div class="job_listing-company">
+          <strong><?=$row[9]?></strong>               
+        </div>
+      </div>
+
+      <div class="job_listing-location job_listing__column">
+        <?=$row[5]?>    
+      </div>
+
+      <ul class="job_listing-meta job_listing__column">
+        
+        <li class="job_listing-type job-type full-time">Full Time</li>
+        <li class="job_listing-date"><date><?=$row[8]?></date></li>
+
+      </ul>
+
+    </div>
+  </li>
+  <?}?>
+</ul><a class="load_more_jobs" href="#" style="display:none;"><strong>Load more listings</strong></a></div>
                 </div>
 
                     </div>
 
-    </div><!-- #primary -->
+    </div>
+    <!-- #primary -->
 
 
-		</div><!-- #main -->
+		</div>
+    <!-- #main -->
 
 <?php include "footer.php" ?>

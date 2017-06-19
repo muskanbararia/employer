@@ -83,13 +83,8 @@
 				<label for="resume_category">Job category</label>
 				<div class="field">
 					<select name='category' id='category' class='job-manager-category-dropdown ' multiple='multiple' data-placeholder='Choose a category&hellip;' data-no_results_text='No results match' data-multiple_text='Select Some Options'>
-          	<option class="level-0" value="49">Designer</option>
-          	<option class="level-0" value="51">Management &amp; Finance</option>
-          	<option class="level-0" value="52">Marketing</option>
-          	<option class="level-0" value="79">Quality Assurance</option>
-          	<option class="level-0" value="77">Software Development</option>
-          	<option class="level-0" value="50">Web Design/Development</option>
-          </select>
+          	<option class="level-0" value="iti">ITI</option>
+          	<option class="level-0" value="diploma">Diploma</option>
 				</div>
 			</fieldset>
 					<fieldset class="fieldset-resume_content">

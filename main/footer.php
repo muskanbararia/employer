@@ -101,25 +101,9 @@ Toronto, Ontario M4K 6F4</div>
         <a href="{{{ data.href }}}">{{{ data.title }}}</a>
     <# } #>
 </script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/extended\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/extended\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/jobify-demos.astoundify.com\/extended\/cart-2\/","is_cart":"","cart_redirect_after_add":"no"};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/add-to-cart.min8571.js?ver=3.0.7'></script>
 <script type='text/javascript' src='js/jquery.blockUI.min44fd.js?ver=2.70'></script>
 <script type='text/javascript' src='js/js.cookie.min6b25.js?ver=2.1.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/extended\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/extended\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='js/woocommerce.min8571.js?ver=3.0.7'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/extended\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/extended\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/cart-fragments.min8571.js?ver=3.0.7'></script>
 <script type='text/javascript' src='js/core.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='js/widget.mine899.js?ver=1.11.4'></script>
@@ -127,41 +111,16 @@ var wc_cart_fragments_params = {"ajax_url":"\/extended\/wp-admin\/admin-ajax.php
 <script type='text/javascript' src='js/slider.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='js/underscore.min4511.js?ver=1.8.3'></script>
 <script type='text/javascript' src='js/backbone.min9632.js?ver=1.2.3'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpUtilSettings = {"ajax":{"url":"\/extended\/wp-admin\/admin-ajax.php"}};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/wp-util.min66f2.js?ver=4.7.5'></script>
 <script type='text/javascript' src='js/wp-backbone.min66f2.js?ver=4.7.5'></script>
 <script type='text/javascript' src='js/jquery.deserialize1576.js?ver=1.2.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var job_manager_chosen_multiselect_args = {"search_contains":"1"};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/chosen.jquery.minf488.js?ver=1.1.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var job_manager_ajax_filters = {"ajax_url":"\/extended\/jm-ajax\/%%endpoint%%\/","is_rtl":"0","i18n_load_prev_listings":"Load previous listings","lang":null};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/ajax-filters.min9786.js?ver=1.26.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var jobifySettings = {"ajaxurl":"https:\/\/jobify-demos.astoundify.com\/extended\/wp-admin\/admin-ajax.php","archiveurl":"https:\/\/jobify-demos.astoundify.com\/extended\/jobs\/","i18n":{"magnific":{"tClose":"Close","tLoading":"Loading...","tError":"The content could not be loaded."}},"pages":{"is_job":false,"is_resume":false,"is_testimonials":false}};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/jobify.mine149.js?ver=20140416'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var jobifyMapSettings = {"useClusters":"1","overlayTitle":"%d Found","autoFit":"1","trigger":"mouseover","mapOptions":{"zoom":3,"maxZoom":17,"maxZoomOut":3,"gridSize":60,"scrollwheel":true}};
-/* ]]> */
-</script>
 <script type='text/javascript' src='js/app.mina22f.js?ver=20150213'></script>
 <script type='text/javascript' src='js/salvattore.min66f2.js?ver=4.7.5'></script>
 <script type='text/javascript' src='js/main442b.js?ver=20140525'></script>
 <script type='text/javascript' src='js/wp-embed.min66f2.js?ver=4.7.5'></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e20a3d19de","applicationID":"17202079","transactionName":"NQBaN0JUCEMDBkRZCQxKeQBEXAleTQ9fUg8EHA==","queueTime":0,"applicationTime":257,"atts":"GUdZQQpOG00=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 
+  </body>
 </html>
