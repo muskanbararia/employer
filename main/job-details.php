@@ -36,17 +36,15 @@
         <h3 class="page-subtitle">
             
 <ul class="job-listing-meta meta">
-  
-  <li class="job-type part-time" itemprop="employmentType">Part Time</li>
+
 
   <li class="location" itemprop="jobLocation">
-  <a href="https://jobify-demos.astoundify.com/extended/job-region/san-francisco/" rel="tag"><?=$loc?></a></li>
+  <a href="index.php" rel="tag"><?=$loc?></a></li>
 
-  <li class="date-posted" itemprop="datePosted"><date>Posted 4 years ago</date></li>
 
   
   <li class="job-company">
-            <a href="https://jobify-demos.astoundify.com/extended/company/Dolby%20Laboratories/" target="_blank">Dolby Laboratories</a>
+            <a href="https://jobify-demos.astoundify.com/extended/company/Dolby%20Laboratories/" target="_blank"></a>
     </li>
 </ul>
 
