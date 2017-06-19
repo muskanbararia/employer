@@ -39,12 +39,12 @@
 
 
   <li class="location" itemprop="jobLocation">
-  <a href="index.php" rel="tag"><?=$loc?></a></li>
+  <a href="" rel="tag"><?=$loc?></a></li>
 
 
   
   <li class="job-company">
-            <a href="https://jobify-demos.astoundify.com/extended/company/Dolby%20Laboratories/" target="_blank"></a>
+            <a href="" target="_blank"><?=$reg?></a>
     </li>
 </ul>
 
@@ -95,6 +95,12 @@
                     <h2 class="widget-title widget-title--job_listing-top job-overview-title">Overview</h2>
 <h4>Job Description</h4>
 <?=$desc?>
+<h4>Job Category</h4>
+<?=$cat?>
+<h4>Experience</h4>
+<?=$exp?>
+<h4>Skills</h4>
+<?=$skills?>
                 </div>
 
                 
