@@ -19,7 +19,7 @@
                                     
 <article id="post-99991378" class="post-99991378 page type-page status-publish hentry">
     <div class="entry-content">
-        <form action="postResume.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
+        <form action="updateResume.php" method="post" id="submit-resume-form" class="job-manager-form" enctype="multipart/form-data">
 
 	
 	
@@ -33,16 +33,11 @@
 					<input type="text" class="input-text" name="name" id="candidate_name" placeholder="Your full name"  required />
 				</div>
 			</fieldset>
-					<fieldset class="fieldset-candidate_email">
-				<label for="candidate_email">Your email</label>
-				<div class="field">
-					<input type="text" class="input-text" name="email" id="candidate_email" placeholder="you@yourdomain.com"  required />
-				</div>
-			</fieldset>
+					
 					<fieldset class="fieldset-resume_region">
 				<label for="resume_region">Region</label>
 				<div class="field">
-					<select  name='resume_region' id='region' class='postform' >
+					<select  name='region' id='region' class='postform' >
 	<option class="level-0" value="North">North</option>
 	<option class="level-0" value="East">East</option>
 	<option class="level-0" value="South">South</option>
@@ -94,7 +89,7 @@
 				<div class="field">
 					<div id="wp-resume_content-wrap" class="wp-core-ui wp-editor-wrap html-active"><link rel='stylesheet' id='dashicons-css'  href='../../../17314-presscdn-0-16-pagely.netdna-ssl.com/extended/wp-includes/css/dashicons.min66f2.css?ver=4.7.5' type='text/css' media='all' />
 <link rel='stylesheet' id='editor-buttons-css'  href='../../../17314-presscdn-0-16-pagely.netdna-ssl.com/extended/wp-includes/css/editor.min66f2.css?ver=4.7.5' type='text/css' media='all' />
-<div id="wp-resume_content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" cols="40" name="details" id="resume_content"></textarea></div>
+<div id="wp-resume_content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" cols="40" name="description" id="resume_content"></textarea></div>
 </div>
 
 				</div>
@@ -103,7 +98,7 @@
 			<fieldset class="fieldset-resume_skills">
 				<label for="resume_skills">Skills <small>(optional)</small></label>
 				<div class="field">
-					<input type="text" class="input-text" name="skills" id="resume_skills" placeholder="Comma separate a list of relevant skills"/>
+					<input type="text" class="input-text" name="skill" id="resume_skills" placeholder="Comma separate a list of relevant skills"/>
 				</div>
 			</fieldset>
 

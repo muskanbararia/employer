@@ -11,13 +11,7 @@
 
     <div id="primary" role="main">
         
-<div class="job_listing-map-wrapper">
-	
-	<div class="job_listing-map">
-		<div id="job_listing-map-canvas"></div>
-	</div>
 
-	</div>
 
   <div class="container content-area">
     <div class="entry-content">
@@ -44,7 +38,7 @@
 <ul class="job_listings">
 <?php 
   require "database/dbcon.php";
-  $getJob = "SELECT * FROM job";
+  $getJob = "SELECT * FROM job WHERE approval='1'";
   $job = $dbcon->query($getJob);
   while($row = $job->fetch_array()){
     $id = $row[0];
@@ -52,8 +46,7 @@
   <li id="job_listing-3340" class="job_listing job-type-full-time job_position_featured post-3340 type-job_listing status-publish has-post-thumbnail hentry job_listing_region-new-york job_listing_category-design job_listing_type-full-time" style="visibility: visible;">
     <a href="job-details.php?tag=<?=$id?>" class="job_listing-clickbox"></a>
 
-    <div class="job_listing-logo">
-      <img class="company_logo" src="https://jobify-demos.astoundify.com/extended/wp-content/uploads/sites/3/2014/03/company-logo-airbnb.png" alt="AirBnB"> </div><div class="job_listing-about">
+    <div class="job_listing-about">
 
       <div class="job_listing-position job_listing__column">
         <h3 class="job_listing-title"><?=$row[4]?></h3>
@@ -68,7 +61,7 @@
 
       <ul class="job_listing-meta job_listing__column">
         
-        <li class="job_listing-type job-type full-time">Full Time</li>
+        <li class="job_listing-type job-type full-time"><?=$row[7]?></li>
         <li class="job_listing-date"><date><?=$row[8]?></date></li>
 
       </ul>

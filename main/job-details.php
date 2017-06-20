@@ -43,9 +43,7 @@
 
 
   
-  <li class="job-company">
-            <a href="" target="_blank"><?=$reg?></a>
-    </li>
+ 
 </ul>
 
         </h3>
@@ -54,58 +52,64 @@
     <div id="content" class="container content-area" role="main">
 
         
-            
-<div class="job-meta-top row">
-
-  
-  <div class="col-md-3 col-sm-6 col-xs-12">
-    <aside id="jobify_widget_job_company_logo-2" class="widget widget--job_listing widget--job_listing-top jobify_widget_job_company_logo"><a href="https://jobify-demos.astoundify.com/extended/company/Dolby%20Laboratories/" target="_blank"><img class="company_logo" src="https://17314-presscdn-0-16-pagely.netdna-ssl.com/extended/wp-content/uploads/sites/3/2016/04/company-logo-dolby.jpg" alt="Dolby Laboratories"></a></aside>  </div>
-
-  
-  <div class="col-md-4 col-sm-6 col-xs-12">
-     </div>
-
-  
-  <div class="col-md-5 col-sm-6 col-xs-12">
-    
-
-
-</aside><aside id="jobify_widget_job_apply-2" class="widget widget--job_listing widget--job_listing-top jobify_widget_job_apply"> <div class="job_application application">
-        
-    <input type="button" class="application_button button popup-trigger" value="Apply for job" href="#apply-overlay">
-    
-    <div class="application_details modal" id="apply-overlay" style="display: none;">
-        <div id="ninja_forms_form_1_cont" class="ninja-forms-cont">
-    <div id="ninja_forms_form_1_wrap" class="ninja-forms-form-wrap">
-  <h2 class="ninja-forms-form-title">Apply For Job</h2><div id="ninja_forms_form_1_response_msg" style="" class="ninja-forms-response-msg "></div>  
-    </div>
-    </div>
-      </div>
-      </div>
-<div class="job-manager-form wp-job-manager-bookmarks-form">
-  <div><a class="bookmark-notice" href="https://jobify-demos.astoundify.com/extended/wp-login.php?redirect_to=https%3A%2F%2Fjobify-demos.astoundify.com%2Fextended%2Fjob%2Fdesign-technologist-shopping-innovation%2F">Login to bookmark this Job</a></div>
-</div></aside>  </div>
-
-  
-  
-</div>
+ 
 
             <div class="job-overview-content row">
                 <div itemprop="description" class="job_listing-description job-overview col-md-12 col-sm-12">
-                    <h2 class="widget-title widget-title--job_listing-top job-overview-title">Overview</h2>
-<h4>Job Description</h4>
+                    <h2 class="widget-title widget-title--job_listing-top job-overview-title">Job Overview</h2>
+                    <br><br>
+<h4>Job Description:</h4>
 <?=$desc?>
-<h4>Job Category</h4>
+<h4>Job Category:</h4>
 <?=$cat?>
-<h4>Experience</h4>
+<h4>Experience:</h4>
 <?=$exp?>
-<h4>Skills</h4>
+<h4>Skills:</h4>
 <?=$skills?>
+<br><br>
                 </div>
 
                 
                             </div>
+<div class="col-md-5 col-sm-6 col-xs-12">
+    
 
+
+<aside id="jobify_widget_job_apply-2" class="widget widget--job_listing widget--job_listing-top jobify_widget_job_apply"> 
+<?php 
+ if (isset($_SESSION['candidate'])): ?>
+
+    <form action="apply.php" method="POST">
+                    <input type="hidden" name="ide" value="<?=$id?>">
+  <!--<input type="submit"  style="background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;" name="edit" value="Edit" > -->
+
+  <input type="submit" style="background-color: #f44336;;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;" name="del" value="Apply for job" >
+</form>
+    
+      
+      <?php else : ?>
+<div class="job-manager-form wp-job-manager-bookmarks-form">
+  <div><a class="bookmark-notice" href="my-account.php">Login to bookmark this Job</a></div>
+</div>
+<?php endif; ?></aside>  </div>
             
             </div>
 

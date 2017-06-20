@@ -27,8 +27,25 @@
 <li id="menu-item-99991382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-99991382"><a href="#">Candidates</a>
 <ul class="sub-menu">
   <li id="menu-item-99991392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991392"><a href="find-a-job.php">Find A Job</a></li>
-  <li id="menu-item-99991212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991212"><a href="companies.php">Companies</a></li>
+  <!--<li id="menu-item-99991212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991212"><a href="companies.php">Companies</a></li>-->
+  <?php
+  
+  include("./database/dbcon.php");
+   
+      
+      $email=$_SESSION['candidate'];
+      $check_if_package="select * from resume WHERE email='$email'";
+      $run_query=$dbcon->query($check_if_package);  
+
+      if($run_query->num_rows==0){
+         
+      ?>
+  <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="submit-your-resume.php">Submit Your Resume</a></li>
+  <?php } 
+  else {?>
   <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="edit-your-resume.php">Edit Your Resume</a></li>
+  <?php } ?>
+    <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="applied-job.php">View Applications</a></li>
   
 </ul>
 </li>
@@ -51,6 +68,7 @@
   <li id="menu-item-99991392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991392"><a href="find-a-job.php">Find A Job</a></li>
   <li id="menu-item-99991212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991212"><a href="companies.php">Companies</a></li>
   <li id="menu-item-99991384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991384"><a href="submit-your-resume.php">Submit Your Resume</a></li>
+
   
 </ul>
 </li>  
